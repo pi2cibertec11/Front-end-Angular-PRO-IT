@@ -1,0 +1,75 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+    
+      </script>
+<div class="panel panel-primary"  >
+    <div class="panel-heading">
+        {{pageTitle}}
+    </div>
+    <div class="panel-body"  >
+        <div  class="row" style="font-size:18px" *ngIf='clients' style="margin-left: 20px">
+           <div class="text-left" style="font-size:18px ; margin-left:12px">Nombres:</div>
+           
+           <div class="text-left" ><input style="border-color:cyan;border-radius:7px; background-color:lavender ; margin-left:12px" type="text" placeholder="Nombre Completo" [(ngModel)]='clients.NombreCliente' /> </div> 
+           <br>
+           <div class="text-left" style="font-size:18px ; margin-left:12px">Apellidos:</div>
+           <div class="text-left" ><input style="border-color:cyan;border-radius:7px ; background-color:lavender ; margin-left:12px" type="text" placeholder="Apellidos" [(ngModel)]='clients.ApellidosCliente'/> </div> 
+           <br>
+           <div class="text-left" style="font-size:18px ; margin-left:12px">Correo:</div>
+           <div class="text-left" ><input style="border-color:cyan;border-radius:7px ; background-color:lavender ; margin-left:12px" type="text" placeholder="Correo" [(ngModel)]='clients.Email'  /> </div> 
+           <br>
+           <div class="text-left" style="font-size:18px ; margin-left:12px">Teléfono:</div>
+           <div class="text-left" ><input style="border-color:cyan;border-radius:7px ; background-color:lavender ; margin-left:12px" type="text" placeholder="Telefono" [(ngModel)]='clients.TelefonoCliente' /> </div> 
+           <br>
+           <div class="text-left" style="font-size:18px ; margin-left:12px">Contraseña:</div>
+           <div class="text-left" ><input style="border-color:cyan;border-radius:7px ; background-color:lavender ; margin-left:12px" type="text" placeholder="Contraseña" [(ngModel)]='clients.Password'  /> </div> 
+           <br>
+           <div class="text-left" style="font-size:18px ; margin-left:12px">Repetir contraseña:</div>
+           <div class="text-left" ><input style="border-color:cyan;border-radius:7px ; background-color:lavender ; margin-left:12px" type="text" placeholder="Confirmar" [(ngModel)]='clients.ConfirmPassword'  /> </div> 
+           <br>
+           <div class="g-recaptcha" data-sitekey="6Le3bTAUAAAAAKNknB5MHjT0BwFTWoSmw7V8S7zN"></div>
+           <div class="text-left">  
+                                                                          <button id="btnRegistrar" class='btn btn-success' style='width:100px'  style="margin-left: 12px" (click)="Registrar()" >
+           Crear Cuenta
+        </button>
+           </div>
+<div class="modal"  id="sucessmodal" tabindex="-1" data-keyboard="false" data-backdrop="static">
+<div class="modal-dialog modal-sm">
+    <div class="modal-content">
+        <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal">&times;</button>
+<h4>Success</h4>
+    </div>
+<div class="modal-body"><h2>Registro Completo</h2></div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" data-dismiss="modal" class="btn btn-success">
+            Cerrar</button>
+        </div>
+        <script type="text/javascript">
+    
+            $(document).ready(function(){
+                   $('#btnRegistrar').click(function()
+                   {
+                   $('#successmodal').modal('show');})
+               }
+            )
+           </script>
+
+ 
+</div>
+
+</div>
+
+
+        </div>
+       <br> <br>
+       <br> <br>
+        <div class="row"  >
+            <div class="text-center">Developed by:</div>
+            <h3 class="text-center">EquipoProyectoIntegador2</h3>
+
+        
+        </div>
+    </div>
+</div>
+
