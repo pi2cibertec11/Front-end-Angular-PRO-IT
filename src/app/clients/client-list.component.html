@@ -1,0 +1,47 @@
+<div class='panel panel-primary'>
+    <div class='panel-heading'>
+        {{pageTitle}}
+    </div>
+    <div class='panel-body' >
+        <div class='row'>
+            
+        </div>
+        <div class='row'>
+            
+        </div>
+        <div class='table-responsive' >
+            <table class='table'
+                    *ngIf='clients && clients.length'>
+                <thead>
+                    <tr>
+                        <th>
+                            <button class='btn btn-primary'
+                                (click)='toggleImage()'>
+                                {{showImage ? 'Hide' : 'Show'}} Image
+                            </button>
+                        </th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>DNI</th>
+                        <th>Direccion</th>
+                        <th>Celular</th>
+                        <th>Correo</th>
+                    
+
+                    </tr>
+                </thead>
+                <tbody>
+
+<tr *ngIf="!clients">
+    <td colspan="5"> Loading Data...</td>
+</tr>
+
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div *ngIf='errorMessage' class='alert alert-danger'>
+    Error: {{ errorMessage }}
+</div>
