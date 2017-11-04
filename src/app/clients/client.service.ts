@@ -10,7 +10,7 @@ import { LocalStorageHelper} from '../shared/localStorageHelper';
 
 
 
-import { AuthHttp } from 'angular2-jwt';
+//import { AuthHttp } from 'angular2-jwt';
 
 
 
